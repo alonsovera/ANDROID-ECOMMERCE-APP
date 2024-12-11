@@ -1,0 +1,26 @@
+<resources>
+    <!-- Array de Provincias para Lima -->
+    <string-array name="provincias_lima">
+        <item>Lima</item>
+    </string-array>
+
+    <!-- Array de Distritos para Lima -->
+    <string-array name="distritos_lima">
+        <item>Lima</item>
+
+        <item>San Juan de Miraflores</item>
+        <item>San Luis</item>
+        <item>San Martín de Porres</item>
+        <item>San Miguel</item>
+        <item>Santa Anita</item>
+        <item>Santa María del Mar</item>
+        <item>Santa Rosa</item>
+        <item>Santiago de Surco</item>
+        <item>Surquillo</item>
+        <item>Villa El Salvador</item>
+        <item>Villa María del Triunfo</item>
+    </string-array>
+
+
+</resources>
+

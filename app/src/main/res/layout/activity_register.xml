@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:background="@color/pastel_yellow"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Título para Nombres -->
+        <TextView
+            android:id="@+id/nameTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/first_name"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/nombresRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:hint="@string/first_name"
+            android:minHeight="48dp"
+            android:layout_marginBottom="16dp"
+            tools:ignore="TextFields" />
+
+        <!-- Título para Apellido -->
+        <TextView
+            android:id="@+id/lastnameTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lastname"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Título para Correo -->
+        <EditText
+            android:id="@+id/apellidoRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:autofillHints=""
+            android:hint="@string/lastname"
+            android:minHeight="48dp"
+            tools:ignore="TextFields" />
+
+        <TextView
+            android:id="@+id/emailuserTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/emailRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Título para Teléfono -->
+        <TextView
+            android:id="@+id/phoneTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/telefonoRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:layout_marginBottom="16dp"
+            tools:ignore="TextFields" />
+
+        <TextView
+            android:id="@+id/addressuserTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/address"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/userAdress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:hint="@string/address"
+            android:minHeight="48dp"
+            android:layout_marginBottom="16dp"
+            tools:ignore="TextFields" />
+
+        <TextView
+            android:id="@+id/provinceTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/province"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Spinner para Provincia -->
+        <Spinner
+            android:id="@+id/provinciaSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/provincias_lima"
+            android:minHeight="48dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/districtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/district"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Spinner para Distrito (solo distritos de Lima) -->
+        <Spinner
+            android:id="@+id/distritoSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:minHeight="48dp" />
+        <!-- Título para Contraseña -->
+        <TextView
+            android:id="@+id/passworduserTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/passwordRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Título para Confirmar Contraseña -->
+        <TextView
+            android:id="@+id/confirmPasswordTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/repeat_password"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/confirmPasswordRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:hint="@string/repeat_password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:layout_marginBottom="16dp" />
+        <!-- Botón de Registro -->
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signup" />
+    </LinearLayout>
+</ScrollView>

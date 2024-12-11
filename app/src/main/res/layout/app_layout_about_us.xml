@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AboutUsActivity">
+
+    <!-- Barra superior (Toolbar) -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/barlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/pastel_brown"
+            android:popupTheme="@style/AppTheme.PopupOverlay"
+            android:title="EcoPets"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Contenido Principal (Información, Misión y Visión) -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_below="@id/barlayout">
+
+        <!-- Información de EcoPets -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/ecopets_information"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <!-- Misión de EcoPets -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/ecopets_mision"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <!-- Visión de EcoPets -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/ecopets_vision"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Primera noticia -->
+            <ImageView
+                android:src="@drawable/noticia1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp" />
+
+            <!-- Segunda noticia -->
+            <ImageView
+                android:src="@drawable/noticia2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp" />
+
+            <!-- Tercera noticia -->
+            <ImageView
+                android:src="@drawable/noticia3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

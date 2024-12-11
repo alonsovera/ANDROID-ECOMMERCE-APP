@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ActivityHelp">
+
+
+
+    <!-- Barra superior (Toolbar) -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/barlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/pastel_brown"
+            android:popupTheme="@style/AppTheme.PopupOverlay"
+            android:title="EcoPets"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/help_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/barlayout"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Si necesitas ayuda, llama a los siguientes números:\n- Soporte: +51 987 654 321\n- Atención al cliente: +51 123 456 789"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:gravity="start" />
+
+
+
+
+
+</RelativeLayout>

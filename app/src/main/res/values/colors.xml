@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Colores Pastel -->
+    <color name="pastel_brown">#D2B48C</color> <!-- Marrón Pastel -->
+    <color name="pastel_yellow">#FFFFE0</color> <!-- Amarillo Pastel -->
+    <color name="pastel_pink">#FFD1DC</color> <!-- Rosa Pastel -->
+    <color name="pastel_blue">#AEC6CF</color> <!-- Azul Pastel -->
+    <color name="pastel_green">#B0E57C</color> <!-- Verde Pastel -->
+    <color name="pastel_lavender">#E3D8FF</color> <!-- Lavanda Pastel -->
+    <color name="pastel_peach">#FFDAB9</color> <!-- Durazno Pastel -->
+    <color name="pastel_orange">#FFB347</color> <!-- Naranja Pastel -->
+    <color name="pastel_mint">#AAF0D1</color> <!-- Menta Pastel -->
+
+    <!-- Colores Oscuros -->
+    <color name="dark_brown">#3E2723</color> <!-- Marrón Oscuro -->
+    <color name="dark_yellow">#F57F17</color> <!-- Amarillo Oscuro -->
+    <color name="dark_pink">#C2185B</color> <!-- Rosa Oscuro -->
+    <color name="dark_blue">#0D47A1</color> <!-- Azul Oscuro -->
+    <color name="dark_green">#1B5E20</color> <!-- Verde Oscuro -->
+    <color name="dark_lavender">#512DA8</color> <!-- Lavanda Oscura -->
+    <color name="dark_peach">#D84315</color> <!-- Durazno Oscuro -->
+    <color name="dark_orange">#E65100</color> <!-- Naranja Oscuro -->
+    <color name="dark_mint">#00695C</color> <!-- Menta Oscura -->
+</resources>

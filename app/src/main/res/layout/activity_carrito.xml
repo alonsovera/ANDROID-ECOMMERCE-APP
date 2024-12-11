@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarritoActivity">
+
+    <RelativeLayout
+        android:id="@+id/id1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/dark_brown"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/precio_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shopping_cart_total"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:layout_marginTop="7dp" />
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/mensaje1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_brown"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_centerVertical="true"
+        android:text="@string/shopping_message"
+        android:textSize="20sp"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/carrito_lista"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id1"
+        android:layout_above="@+id/siguiente_proceso"/>
+
+    <Button
+        android:id="@+id/siguiente_proceso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/botones2"
+        android:text="@string/shopping_cart_continue"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        />
+</RelativeLayout>

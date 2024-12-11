@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.EcoPetsApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/dark_brown</item> <!-- Color Primario: Marrón Oscuro -->
+        <item name="colorPrimaryVariant">@color/dark_brown
+        </item> <!-- Variante del color primario -->
+        <item name="colorOnPrimary">@color/white
+        </item> <!-- Color del texto o iconos sobre el color primario -->
+
+        <!-- Background y texto para el tema claro -->
+        <item name="colorOnBackground">@color/black</item>
+
+        <!-- Color para barras de navegación y estado -->
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/black</item>
+
+        <!-- Colores para botones y elementos interactivos -->
+        <item name="colorSecondary">@color/pastel_orange</item> <!-- Color Secundario -->
+        <item name="colorOnSecondary">@color/white</item> <!-- Color sobre el color secundario -->
+
+        <item name="colorOnError">@color/white</item> <!-- Color sobre el color de error -->
+    </style>
+
+    <style name="Theme.EcoPetsApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.EcoPetsApp" parent="Base.Theme.EcoPetsApp" />
+</resources>
